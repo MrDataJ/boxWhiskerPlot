@@ -1,0 +1,17 @@
+{
+		"version": "1.0.0.0",
+		"author": {"name":"Your Name","email":"your-email@example.com"},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/boxWhiskerPlot8D6F178824894D5E825C9D80EF3D2F66.pbiviz.json"
+			}
+		],
+		"visual": {"name":"boxWhiskerPlot","displayName":"Box Whisker Plot","guid":"boxWhiskerPlot8D6F178824894D5E825C9D80EF3D2F66","visualClassName":"Visual","version":"1.0.0.0","description":"A custom box and whisker plot visual.","supportUrl":"https://support.url","gitHubUrl":"https://github.com/repository"},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}

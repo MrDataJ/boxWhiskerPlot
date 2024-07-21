@@ -1,0 +1,127 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Category Data",
+            "name": "category",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Min Value",
+            "name": "minValue",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Max Value",
+            "name": "maxValue",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Mean Value",
+            "name": "meanValue",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Lower Quartile",
+            "name": "lowerQuartile",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Upper Quartile",
+            "name": "upperQuartile",
+            "kind": "Measure"
+        },
+        {
+            "displayName": "Median Value",
+            "name": "medianValue",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "quartileColors": {
+            "displayName": "Quartile Colors",
+            "properties": {
+                "lowerQuartileColor": {
+                    "displayName": "Lower Quartile Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "upperQuartileColor": {
+                    "displayName": "Upper Quartile Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "medianLine": {
+            "displayName": "Median Line",
+            "properties": {
+                "color": {
+                    "displayName": "Color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "minValue"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "maxValue"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "meanValue"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "lowerQuartile"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "upperQuartile"
+                            }
+                        },
+                        {
+                            "bind": {
+                                "to": "medianValue"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "privileges": []
+}
